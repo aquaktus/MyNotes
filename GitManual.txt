@@ -1,0 +1,37 @@
+this is how to use git from the WAD2 final project I had to do
+
+git add -A                                                                  //this adds all non commited files to the current commit
+git commit -m "<your message>"                                              //this commits your files, and add a message, ommit -m to use vim
+git push                                                                    //push the commit to your current branch
+git checkout <name of branch>                                               //switch branches
+git status                                                                  //view the status of the files you have changed that have not yet been commited
+
+//To ignore a file or a file type make a .gitignore in the base dir, and add the files like bash format
+.pyc
+wsgi.py
+folder/test.txt
+
+//then to remove the files from the online version, and remove cashed versions of the files do
+git rm --cached <file>
+
+//to fork a repo, use the gui on the main page
+//then to link it to the original one do this
+cd into/cloned/fork-repo
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+
+//then to get the version posted on github use
+git pull upstream master
+
+git pull                                                                    //this pulls the branch repo from the github website
+
+//for merge issues, once it happens, go the the files it says has problms with and delete the necesary stuff
+//format:
+
+<<<<<<<<<
+text from your commit
+=========
+test that has overwritten the other
+>>>>>>>>>
+
+//just delete the styling and the unwanted code, then add, commit, and push
