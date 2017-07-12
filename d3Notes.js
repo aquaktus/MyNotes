@@ -13,3 +13,5 @@ var bars = d3.select("#d3Practice")     //searches for the selector (class, tag,
     .style("width", "600px")
     .style("opacity",1);
     
+    .on("mouseover", function(){d3.select(this).attr("class", "")})         //detects mouseover event and you can refrence the selection to change attributes of it by this, but don't use ()=>{} cuz typescript has conflicts with it 
+    .on("mouseout", function(){d3.select(this).attr("class", "green")})         //same only mouseout
