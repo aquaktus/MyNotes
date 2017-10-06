@@ -8,6 +8,21 @@ set mouse=a
 syntax on
 set clipboard=unnamedplus
 set path+=**
+
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
+
+execute "set <M-j>=\ej"
+map <C-I> :tabn<CR>
+map <C-U> :tabp<CR>
+map <C-N> :tabnew<CR>
+
+map <C-T> :NERDTreeTabsToggle<CR>
+
+set timeoutlen=0
+
 "let base16colorspace=256
 "set t_Co=256
 "set background=light
