@@ -1,0 +1,3 @@
+vispy
+plotly
+bokeh python
